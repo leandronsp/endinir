@@ -8,13 +8,5 @@ Hello World in C programming language.
 
 ### Running
 
-1. Create a file named `tutorial.c` and put this content inside it:
-```
-#include <stdio.h>
-
-int main () {
-    printf("hello world, engineer!");
-}
-```
-2. Run `gcc -o tutorial tutorial.c` (it will compile it and create the executable file `tutorial`)
-3. Run the executable `./tutorial` (it should print "hello world, engineer!" on the screen)
+* Run `gcc -o tutorial tutorial.c` (it will compile it and create the executable file `tutorial`)
+* Run the executable `./tutorial` (it should print "hello world, engineer!" on the screen)
