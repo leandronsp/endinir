@@ -25,9 +25,3 @@ open tutorial-css-js.html
 ```
 open tutorial-advanced.html
 ```
-
-## Like a professional
-
-```
-open tutorial-professional/index.html
-```
