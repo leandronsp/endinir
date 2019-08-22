@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<script>
+			var exampleSocket = new WebSocket("ws://localhost:2000");
+
+			exampleSocket.onopen = function (event) {
+				exampleSocket.send("Hello from the Client!");
+			};
+
+			exampleSocket.onmessage = function (event) {
+				console.log(event.data);
+			}
+		</script>
+	</head>
+</html>

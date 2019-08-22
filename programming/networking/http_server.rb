@@ -9,8 +9,10 @@ puts 'Listening to the port 2000...'
 while client = socket.accept
   # starting the HTTP ceremony (boring :S)
   # waiting for the client to send the first message of the ceremony
-  request = client.gets
-  puts request
+  while line = client.gets
+  	puts line
+		break if line == "\r\n"
+	end
 
   # sends messages to the connection
   client.print "HTTP/1.1 200\r\n"
