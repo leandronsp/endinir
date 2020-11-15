@@ -6,9 +6,9 @@ socket = TCPServer.new(2000)
 puts 'Listening to the port 2000...'
 
 # loop forever listening to all connections through the opened socket
-while client = socket.accept
+while connection = socket.accept
   # sends a message to the connection
-  client.puts 'Hello from the Server!'
+  connection.puts 'Hello from the Server!'
   # closes the connection with the client
-  client.close
+  connection.close
 end
